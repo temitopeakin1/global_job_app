@@ -15,15 +15,15 @@ const Home = () => {
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       <Stack.Screen
         options={{
-          headerStyle: { backgroundColor: COLORS.lightWhite },
-          headerShadowVisible: true,
-          headerLeft: () => {
+          headerStyle: { backgroundColor: COLORS.gray2 },
+          headerShadowVisible: false,
+          headerRight: () => {
             <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />;
           },
-          headerRight: () => {
+          headerLeft: () => {
             <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />;
           },
-          headerTitle: "", 
+          headerTitle: "Job Finder", 
         }}
       />
 
@@ -32,7 +32,7 @@ const Home = () => {
           style={{
             flex: 1, 
             padding: SIZES.medium,
-          }}
+          }} 
         >
           <Welcome />
 

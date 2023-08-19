@@ -44,7 +44,6 @@ const Popularjobs = () => {
        ) : (
          <FlatList data={data}
          renderItem={({ item }) => (
-        //  renderItem={(item) => (
           <PopularJobCard item = {item}
           selectedJob={selectedJob}
           handleCardPress={handleCardPress}/>

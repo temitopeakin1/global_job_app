@@ -16,7 +16,7 @@ const Layout = () => {
         if(fontsLoaded) {
             await SplashScreen.hideAsync();
         }
-    }, [fontsLoaded])
+    }, [fontsLoaded]) 
 
     if (!fontsLoaded) return null
 

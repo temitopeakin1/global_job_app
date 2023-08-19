@@ -5,6 +5,7 @@ import axios from 'axios';
 // const rapidApiKey = RAPID_API_KEY;
 
 const useFetch = (endpoint, query) => {
+  // data is in array format
  const [data, setData] = useState([]);
  const [isLoading, setIsLoading] = useState(false);
  const [error, setError] = useState(null);
@@ -25,11 +26,13 @@ const useFetch = (endpoint, query) => {
   };
   const fetchData = async()=> {
     setIsLoading(true);
+
     
     try {
         const response = await axios.request(options);
         setData(response.data.data);
         setIsLoading(false)
+        // console.log(response.data);
     } catch (error) {
         setError(error);
         alert('There is an Error')
