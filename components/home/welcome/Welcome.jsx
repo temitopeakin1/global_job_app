@@ -51,7 +51,7 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
           renderItem={({ item }) => (
             <TouchableOpacity
               style={styles.tab(activeJobType, item)}
-              onPress={() => {
+              onPress={() => {N
                 setActiveJobType(item);
                 router.push(`/search/${item}`);
               }}

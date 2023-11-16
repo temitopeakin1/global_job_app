@@ -24,10 +24,8 @@ const useFetch = (endpoint, query) => {
     },
     params: { ...query }
   };
-  const fetchData = async()=> {
-    setIsLoading(true);
-
-    
+  const fetchData = async () => {
+    setIsLoading(true);  
     try {
         const response = await axios.request(options);
         setData(response.data.data);

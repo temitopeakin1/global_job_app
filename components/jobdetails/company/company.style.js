@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     fontSize: SIZES.medium - 2,
     color: COLORS.primary,
     fontFamily: FONT.medium,
-  },
+  },  
   locationBox: {
     flexDirection: "row",
     justifyContent: "center",
